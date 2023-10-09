@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testreport_onbuild DAMTE</title>
+<link type="text/css" rel="stylesheet" href="http://127.0.0.1/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width=231 height=56 src="http://127.0.0.1/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Informe de Ejecución del Plan de Pruebas (de una build específica)</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Proyecto de Pruebas: DAMTE<br/>Plan de Pruebas: DAMTE<br/>Build: Version 1.0 </p></div>
+<div class="summary"><p id="printedby">Imprimido por TestLink el 05/12/2021</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Tabla de Contenidos</h1><div class="toc"><p style="padding-left: 10px;"><b><a href="#toc_1_1">1.1.ABM-alarmas</a></b></p>
+<p style="padding-left: 30px;"><a href="#toc_tc100">AD-1: Agregar nueva alarma</a></p><p style="padding-left: 30px;"><a href="#toc_tc102">AD-2: Mostrar alarmas existentes</a></p><p style="padding-left: 30px;"><a href="#toc_tc104">AD-3: Eliminar alarma</a></p><p style="padding-left: 30px;"><a href="#toc_tc106">AD-4: Modificar alarma</a></p><p style="padding-left: 30px;"><a href="#toc_tc108">AD-5: Vincular datos con dispenser</a></p></div><h1 class="doclevel" >Proyecto de Pruebas: DAMTE</h1>
+<div class="txtlevel"><p>Sistema de gestion del dispositivo DAMTE</p></div>
+ <br/><h1 class="doclevel" style="page-break-before: avoid;"  >Plan de Pruebas: DAMTE</h1>
+<div class="txtlevel"><p>Plan de pruebas para el sistema DAMTE</p></div>
+ <br/><h1 class="doclevel" style="page-break-before: avoid;"  >Build: Version 1.0 </h1>
+<div class="txtlevel"><p>buil de prueba para DAMTE</p>
+</div>
+ <br/><p></p><a name='toc_1_1'></a>
+<h1 class='doclevel'>1.1.Suite de Pruebas : ABM-alarmas</h1>
+<div><p>ALTA, BAJA, MODIFICACION Y VINCULACION DE ALARMAS</p>
+</div><a name="toc_tc100"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba AD-1: Agregar nueva alarma&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Resumen:</span><br /><p>Agregar una nueva alarma</p>
+</td></tr><tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El responsable debe estar registrado, y logueado en en la aplicaci&oacute;n</p>
+
+<p>El paciente debe estar registrado</p>
+
+<p>Los medicamentos deben estar registrados</p>
+
+<p>Tener conexion a internet</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Presionar en el boton &quot;Configurar Alarmas&quot; que se encuentra dentro del inicio de la aplicaci&oacute;n.</p>
+</td><td><p>Se abre la ventana &quot;Configuraci&oacute;n de Alarmas&quot; en un pop-up.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Seleccionar un nivel, presionando en el boton con el nombre del nivel</p>
+</td><td><p>Se abre la ventana &quot;Nivel&quot; el Nivel seleccionado y muestra los campos para cargar una nueva alarma</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Presionar en el boton &quot;Sleccionar Hora&quot;.</p>
+</td><td><p>Se muestra en el campo &quot;Hs&quot; la hora y en el campo &quot;Min&quot; los minutos ingresados mediante la barra de desplazamiento en un pop-up.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">4</td><td><p>Seleccionar el medicamento del menu desplegable</p>
+</td><td><p>Se abre un pop up preguntando &quot;&iquest;Esta seguro que quiere definri el medicamento selecconado para este nivel?&quot;</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">5</td><td><p>Presionar el boton &quot;SI&quot;</p>
+</td><td><p>Se borra la seleccion desplegables de medicamentos y solo se muestra en un label es nombre del medicamento seleccionado</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">6</td><td><p>Seleccionar los dias que se debe repetir la alarma,haciendo clic en los botones &#39;L&#39;,&#39;M&#39;,&#39;M&#39;,&#39;J&#39;,&#39;V&#39;,&#39;S&#39; o &#39;D&quot;</p>
+</td><td><p>Se mostrara por debajo las un label con la seleccion de los dias</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">7</td><td><p>Presionar en el boton &quot;Agregar/Modificar&quot;, para darla de alta</p>
+</td><td><p>Se agrega registra la alarma en la base de datos y la muestra en la parte superior de la ventana</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">ABM alarma:  ABM alarma [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0 </td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Pasado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc102"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba AD-2: Mostrar alarmas existentes&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Resumen:</span><br /><p>Mostrar alarmas previamente cargadas en la base de datos</p>
+</td></tr><tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El responsable debe estar registrado, y logueado en en la aplicaci&oacute;n</p>
+
+<p>El paciente debe estar registrado</p>
+
+<p>Los medicamentos deben estar registrados</p>
+
+<p>Tener conexion a internet</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Presionar en el boton &quot;Configurar Alarmas&quot; que se encuentra dentro del inicio de la aplicaci&oacute;n.</p>
+</td><td><p>Se abre la ventana &quot;Configuraci&oacute;n de Alarmas&quot; en un pop-up.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Presionar en el boton &quot;Nivel&quot;</p>
+</td><td><p>Se abre la ventana &quot;Nivel&quot; el nivel seleccionado</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Presionar en el boton &quot;Limpiar/Cargar&quot;.</p>
+</td><td><p>Se lista las alarmas configuradas para ese nivel.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">ABM alarma:  ABM alarma [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0 </td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Pasado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc104"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba AD-3: Eliminar alarma&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Resumen:</span><br /><p>Eliminar alarma cargada</p>
+</td></tr><tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El responsable debe estar registrado, y logueado en en la aplicaci&oacute;n</p>
+
+<p>El paciente debe estar registrado</p>
+
+<p>Los medicamentos deben estar registrados</p>
+
+<p>Tener conexion a internet</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Presionar en el boton &quot;Configurar Alarmas&quot; que se encuentra dentro del inicio de la aplicaci&oacute;n.</p>
+</td><td><p>Se abre la ventana &quot;Configuraci&oacute;n de Alarmas&quot; en un pop-up.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Presionar en el boton &quot;Nivel&quot;</p>
+</td><td><p>Se abre la ventana &quot;Nivel&quot; el nivel seleccionado</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Presionar el boton &quot;Limpiar/Cargar&quot;</p>
+</td><td><p>Se lista las alarmas configuradas</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">4</td><td><p>Seleccionar la alarma.</p>
+</td><td><p>Muestra la alarma a eliminar en los campos que se encuentran en la parte superior de la pantalla</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">5</td><td><p>Presionar el boton &quot;Eliminar&quot;</p>
+</td><td><p>El sistema debe mostrar un mensaje de consultando al usuario &quot;La alarma seleccionada sera eliminada&quot;. Luego se elimina la alarma de la base de datos y de la lista de alarmas mostradas en en pantalla</p>
+</td><td>No muestra el mensaje antes de eliminar la alarma</td><td>Fallado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">ABM alarma:  ABM alarma [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0 </td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Fallado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc106"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba AD-4: Modificar alarma&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Resumen:</span><br /><p>Modificar alarma cargada previamente</p>
+</td></tr><tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El responsable debe estar registrado, y logueado en en la aplicaci&oacute;n</p>
+
+<p>El paciente debe estar registrado</p>
+
+<p>Los medicamentos deben estar registrados</p>
+
+<p>Tener conexion a internet</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Presionar en el boton &quot;Configuracion de Alarmas&quot; que se encuentra dentro del inicio de la aplicaci&oacute;n</p>
+</td><td><p>Se abre la ventana &quot;Configuraci&oacute;n de Alarmas&quot; en un pop-up donde muestra las alarmas configuradas</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Presionar en el boton &quot;Nivel&quot;</p>
+</td><td><p>Se abre la ventana &quot;Nivel&quot; el nivel seleccionado</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Presionar el boton &quot;Limpiar/Cargar&quot;.</p>
+</td><td><p>Se lista las alarmas configuradas</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">4</td><td><p>Seleccionar la alarma.</p>
+</td><td><p>Muestra la alarma a modificar en los campos de la parte superior de la pantalla.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">5</td><td><p>Modificar los datos deseados y pesionar el boton &quot;Agregar/Modificar&quot;</p>
+</td><td><p>El sistema mostrara un mensaje de advertencia &quot;la alarma fue modificada con exito&quot;</p>
+
+<p>El sistema modifica los datos ingresados en la base de datos</p>
+</td><td>No muestra mensaje luego de modificar la alarma</td><td>Fallado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">ABM alarma:  ABM alarma [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0 </td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Fallado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc108"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba AD-5: Vincular datos con dispenser&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Resumen:</span><br /><p>Vincular los datos cargados de las alarmas con el dispenser</p>
+</td></tr><tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El responsable debe estar registrado, y logueado en en la aplicaci&oacute;n</p>
+
+<p>El paciente debe estar registrado</p>
+
+<p>Los medicamentos deben estar registrados</p>
+
+<p>Alarmas registradas</p>
+
+<p>Tener conexion a internet</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Presionar en el boton &quot;Configurar Alarmas&quot; que se encuentra dentro del inicio de la aplicaci&oacute;n.</p>
+</td><td><p>Se abre la ventana &quot;Configuraci&oacute;n de Alarmas&quot; en un pop-up.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Presionar en el boton &quot;Vincular&quot;.</p>
+</td><td><p>Se muestra el siguiente mensaje &quot;Vinculaci&oacute;n exitosa&quot;</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5">2.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">ABM alarma:  ABM alarma [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0 </td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Pasado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<h1 class="doclevel">Métricas de tiempos de ejecución</h1>
+<div>
+<p>Tiempo estimado para ejecutar 5 casos de prueba (min):22</p>
+</div>
+
+</body>
+</html>
